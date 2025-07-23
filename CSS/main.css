@@ -1,0 +1,99 @@
+body{
+  padding: 0;
+  margin: 0;
+  color: white;
+  
+}
+#background-div{
+  background-image: url(../assets/images/background-desktop.png)  ;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+#background-div .pattern-lines{
+  background-image: url(../assets/images/pattern-lines.svg);
+  background-size: cover;
+  width: 80%;
+  height: 80%;
+}
+#background-div .pattern-squiggly-bottom{
+  margin: 0;
+  padding: 0;
+  background-image: url(../assets/images/pattern-squiggly-line-bottom-desktop.svg);
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#background-div .squiggly-line-top{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 3rem;
+  right: 0;
+}
+.top-circle{
+  position: absolute;
+  top: 0rem;
+  left: 5rem;
+  animation-name: circle-motion;
+  animation-duration: 5s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+}
+.bottom-circle{
+  position: absolute;
+  right: 5rem;
+  animation-name: circle-motion;
+  animation-duration: 5s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.top-circle , .bottom-circle{
+  width: 12%;
+  
+}
+
+@keyframes circle-motion {
+  0%{
+    transform: translate(0);
+  }100%{
+    transform: translate(0,100vh);
+  }
+}
+@media (max-width:768px) and (min-width:426px){
+  #background-div{
+    background-image: url(../assets/images/background-tablet.png);
+  }
+  #background-div .pattern-squiggly-bottom{
+    background-image: url(../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg);
+  }
+}
+@media (max-width:425px){
+  #background-div{
+    background-image: url(../assets/images/background-mobile.png);
+  }
+  #background-div .pattern-squiggly-bottom{
+    background-image: url(../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg);
+  }
+  .top-circle , .bottom-circle{
+  width: 24%;
+}
+  .top-circle{
+    left: 2rem;
+  }
+  .bottom-circle{
+    right: 2rem;
+  }
+
+}
