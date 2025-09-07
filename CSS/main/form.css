@@ -26,7 +26,7 @@ main{
   margin-bottom: 1rem;
   word-spacing: 0.15em;
 }
-#avatar-input-cont >#avatar-input{
+#avatar-input-cont > #avatar-input{
   display: none;
 }
 #avatar-input-cont{
@@ -86,8 +86,9 @@ main{
   justify-content: center;
   font-size: 0.75rem;
 }
-#avatar-input-cont .info > img{
+#avatar-input-cont .info img{
   margin-right: 0.25rem;
+  width: 13px;
 }
 .input-cont{
   align-items: start;
@@ -102,7 +103,7 @@ main{
   margin-top: 0.3rem;
   backdrop-filter: blur(3px);
   background-color: rgba(255, 255, 255, 0.063);
-  border: solid hsl(245, 19%, 35%);
+  border: 1.25px solid hsl(245, 19%, 35%);
   border-radius: 10px;
   outline: none;
   font-size: 1rem;
@@ -132,6 +133,16 @@ main{
 .generate-btn:active{
   outline: hsl(245, 15%, 58%) 3px solid;
   outline-offset: 2px
+}
+
+.error-msg{
+  font-size:0.75rem ;
+  color: hsl(7, 71%, 60%);
+  transition: 0.25s;
+}
+.error-state input{
+  border-color: hsl(7, 71%, 60%) !important;
+  border-top: hsl(7, 88%, 67%) solid 1.5px !important;
 }
 @media screen and (min-width:426px) {
   .form{

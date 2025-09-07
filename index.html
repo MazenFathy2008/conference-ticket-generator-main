@@ -49,7 +49,7 @@
     <main class="log-in-page">
       <h3>secure your spot at next year's biggest coding Conference</h3>
       <div class="form">
-        <div id="avatar-input-cont">
+        <div id="avatar-input-cont" class="input-cont" data-role="image">
           <label for="avatar-input" class="txt-label">Upload Avatar</label>
           <label for="avatar-input" class="input-img-label">
             <img src="assets/images/icon-upload.svg" />
@@ -62,38 +62,48 @@
             id="avatar-input"
             accept="image/*"
           />
-          <p class="info">
+          <p class="info js-error-msg">
             <img src="assets/images/icon-info.svg" /> Uploade Your photo (JPG or
             PNG max size 500kb)
           </p>
         </div>
-        <div class="input-cont">
+        <div class="input-cont" data-role="name">
           <label for="name-input">Full name</label>
-          <input type="text" id="name-input" name="name-input" />
-          <p class="error-msg"></p>
+
+          <input
+            type="text"
+            id="name-input"
+            name="name-input"
+            placeholder="your name"
+            autocomplete="off"
+          />
+          <p class="error-msg js-error-msg"></p>
         </div>
-        <div class="input-cont">
+        <div class="input-cont" data-role="email">
           <label for="email-input">Email Adress</label>
           <input
             type="email"
             id="email-input"
             name="email-input"
             placeholder="example@gmail.com"
+            autocomplete="off"
           />
-          <p class="error-msg"></p>
+          <p class="error-msg js-error-msg"></p>
         </div>
-        <div class="input-cont">
+        <div class="input-cont" data-role="Githup Username">
           <label for="GitName-input">Githup Username</label>
           <input
             type="text"
             id="GitName-input"
             name="GitName-input"
             placeholder="@yourusername.com"
+            autocomplete="off"
           />
-          <p class="error-msg"></p>
+          <p class="error-msg js-error-msg"></p>
         </div>
-        <button class="generate-btn">Generate ticket</button>
+        <button class="generate-btn js-generate-btn">Generate ticket</button>
       </div>
     </main>
+    <script type="module" src="JS/index.js"></script>
   </body>
 </html>
