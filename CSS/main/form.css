@@ -1,0 +1,145 @@
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.log-in-page  div{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+
+}
+.form{
+  width: 100% ;
+  padding: 0.5rem;
+}
+.form > div{
+  width: 100%;
+}
+.log-in-page h3{
+  font-weight: normal;
+  color: hsl(252, 6%, 83%);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  word-spacing: 0.15em;
+}
+#avatar-input-cont >#avatar-input{
+  display: none;
+}
+#avatar-input-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 12rem;
+}
+.txt-label{
+  width: 100%;
+  text-align: left;
+}
+.input-img-label{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 100%;
+  border: 3px hsl(245, 19%, 35%) dashed;
+  border-radius: 10px;
+  font-size: 1rem;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.063);
+  padding-top: 0.5rem;
+  transition: 0.25s;
+
+}
+.input-img-label img{
+  border: 2px solid hsl(245, 19%, 35%)  ;
+  padding: 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(3px);
+  transition: 0.25s;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+.input-img-label:hover{
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.input-img-label:active{
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.185);
+}
+.input-img-label:focus{
+  outline: hsl(245, 15%, 58%) 3px solid;
+  outline-offset: 2px;
+}
+.input-img-label p{
+  color: hsl(245, 15%, 58%);
+  margin-top: 2.5rem;
+}
+#avatar-input-cont .info{
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+#avatar-input-cont .info > img{
+  margin-right: 0.25rem;
+}
+.input-cont{
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+}
+.input-cont input{
+  width: 100%;
+  height: 3.3rem;
+  margin-top: 0.3rem;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.063);
+  border: solid hsl(245, 19%, 35%);
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  transition: 0.25s;
+}
+.input-cont input:hover{
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.input-cont input:focus{
+  outline: hsl(245, 15%, 58%) 3px solid;
+  outline-offset: 2px;
+}
+.generate-btn{
+  height: 3.3rem;
+  border-radius: 10px;
+  background-color: hsl(7, 71%, 60%);
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.25s;
+}
+.generate-btn:hover{
+  border-bottom: 4px solid hsl(7, 88%, 67%);
+}
+.generate-btn:active{
+  outline: hsl(245, 15%, 58%) 3px solid;
+  outline-offset: 2px
+}
+@media screen and (min-width:426px) {
+  .form{
+  width: 30% ;
+  padding: 0.5rem;
+}
+.log-in-page  div{
+  font-size: 1rem;
+
+}
+}

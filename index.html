@@ -12,8 +12,9 @@
     />
 
     <title>Frontend Mentor | Conference ticket generator</title>
-    <link rel="stylesheet" href="CSS/main.css" />
-    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/main/form.css" />
   </head>
   <body>
     <div id="background-div">
@@ -27,12 +28,72 @@
         class="squiggly-line-top"
         alt="pattern-squiggly-line-top"
       />
-      <img src="assets/images/pattern-circle.svg" alt="circle" class="top-circle" />
-      <img src="assets/images/pattern-circle.svg" alt="circle"  class="bottom-circle"/>
+      <img
+        src="assets/images/pattern-circle.svg"
+        alt="circle"
+        class="top-circle"
+      />
+      <img
+        src="assets/images/pattern-circle.svg"
+        alt="circle"
+        class="bottom-circle"
+      />
     </div>
     <header>
-      <img src="assets/images/logo-full.svg"/>
-      <p>Your Journey to Coding Conf<br> 2025 Startes Here!</p>
+      <img src="assets/images/logo-full.svg" />
+      <p>
+        Your Journey to Coding Conf<br />
+        2025 Startes Here!
+      </p>
     </header>
+    <main class="log-in-page">
+      <h3>secure your spot at next year's biggest coding Conference</h3>
+      <div class="form">
+        <div id="avatar-input-cont">
+          <label for="avatar-input" class="txt-label">Upload Avatar</label>
+          <label for="avatar-input" class="input-img-label">
+            <img src="assets/images/icon-upload.svg" />
+            <p>Drag and drop or click to Upload</p>
+          </label>
+
+          <input
+            type="file"
+            name="avatar-input"
+            id="avatar-input"
+            accept="image/*"
+          />
+          <p class="info">
+            <img src="assets/images/icon-info.svg" /> Uploade Your photo (JPG or
+            PNG max size 500kb)
+          </p>
+        </div>
+        <div class="input-cont">
+          <label for="name-input">Full name</label>
+          <input type="text" id="name-input" name="name-input" />
+          <p class="error-msg"></p>
+        </div>
+        <div class="input-cont">
+          <label for="email-input">Email Adress</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email-input"
+            placeholder="example@gmail.com"
+          />
+          <p class="error-msg"></p>
+        </div>
+        <div class="input-cont">
+          <label for="GitName-input">Githup Username</label>
+          <input
+            type="text"
+            id="GitName-input"
+            name="GitName-input"
+            placeholder="@yourusername.com"
+          />
+          <p class="error-msg"></p>
+        </div>
+        <button class="generate-btn">Generate ticket</button>
+      </div>
+    </main>
   </body>
 </html>
