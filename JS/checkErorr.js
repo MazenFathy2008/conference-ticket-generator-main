@@ -33,7 +33,7 @@ export function checkError() {
       } else {
         removeError(cont);
       }
-    } else if (role === "Githup Username") {
+    } else if (role === "GithupUsername") {
       const githubRegex = /^@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (!githubRegex.test(inputField.value)) {
         changToErrState(cont, role);

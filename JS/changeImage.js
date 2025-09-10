@@ -29,7 +29,6 @@ function handleChange(inputField, labelInput) {
           inputField.dispatchEvent(new Event("change"));
         }, 250);
       });
-      sessionStorage.setItem("imgURL", reader.result);
     };
   } else {
     labelInput.classList.remove("full");
