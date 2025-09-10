@@ -1,0 +1,121 @@
+.ticket-page-h p span{
+  background: linear-gradient(45deg, white, hsl(7, 86%, 67%));
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  
+}
+.ticket-page > p{
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+.ticket-page >p> span{
+  color: hsl(7, 86%, 67%);
+}
+
+.ticket{
+  position: relative;
+  width: 35%;
+  height: 35vh;
+  background-image: url(../../assets/images/pattern-ticket.svg) ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+}
+.ticket > div{
+  height: 100%;
+}
+.left{
+  width: 80%;
+  padding: 2rem;
+}
+.right{
+  width: 20%;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(245, 15%, 58%);
+
+}
+.right span{
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.top{
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: space-around;
+}
+.top img{
+  width: 50%;
+}
+.top span{
+  width: 80%;
+  text-align: center;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  height:80%;
+  gap: 1.25rem;
+}
+.bottom > img{
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+}
+.bottom div{
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+}
+.bottom div span{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.bottom div p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+@media  screen and (max-width:425px) {
+  .ticket-page > p{
+    font-size: 1.1rem;
+  }
+  .ticket{
+    width: 95%;
+    height:22vh ;
+  }
+  .right , .left{
+    height: 100%;
+  }
+  .left .top img{
+    width: 75%;
+  }
+  .top span{
+    font-size: 0.75rem;
+  }
+  .bottom{
+    gap: 0.75rem;
+  }
+  .bottom > img {
+    width: 50px;
+    height: 50px;
+  }
+  .bottom > div{
+    height: 50px;
+  }
+  .bottom >div span {
+    font-size: 1.25rem;
+  }
+}
